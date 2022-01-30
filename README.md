@@ -22,8 +22,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 Git Configuration
 ```sh
-git config --global user.email "jlevensailor@presidio.com" \
-git config --global user.name "Jeff Levensailor"
+git config --global user.email "jlevensailor@presidio.com" && git config --global user.name "Jeff Levensailor"
 ```
 
 Install XCode Developer Tools
