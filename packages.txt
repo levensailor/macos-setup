@@ -19,3 +19,11 @@ gimp
 visual-studio-code
 nerdctl 
 lima
+awscli
+awskeychain
+azure-cli
+mdcat
+twine-pypi
+vue-cli
+z
+zip
