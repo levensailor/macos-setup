@@ -12,7 +12,7 @@ brew install iterm2 zsh
 
 Download .zshrc config file
 ```sh
-cp ~/Downloads/.zshrc ~/.zshrc
+curl https://github.com/levensailor/macos-setup/.zshrc -o ~/.zshrc
 ```
 
 Install oh-my-zsh (optional)
@@ -22,10 +22,34 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 Applications
 ```sh
-brew install maccy postman audacity wget spotify ssh-copy-id jq git ngrok neofetch jq node nvm npm python3
+brew install maccy postman audacity wget spotify ssh-copy-id jq git ngrok neofetch jq node nvm npm python3 gimp visual-studio-code
 ```
 
+Git Configuration
 ```sh
-brew install --cask gimp
+git config --global user.email "jlevensailor@presidio.com"
+```
+```sh
+git config --global user.name "Jeff Levensailor"
+```
+
+Install XCode Developer Tools
+```sh
+xcode-select --install
+```
+
+Generate an RSA key for SSH
+```sh
+ssh-keygen -t rsa
+```
+
+Remove JamF (optional)
+```sh
+sudo jamf -removeFramework
+```
+
+Setup Docker
+```sh
+brew install nerdctl lima && limactl start
 ```
 
