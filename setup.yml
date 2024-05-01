@@ -1,0 +1,14 @@
+---
+
+- name: Configure MacBook
+  hosts: localhost
+  connection: local
+  vars_files:
+    - vars.yml
+  roles:
+    - account
+    - macos-defaults
+    - applications
+    - config
+    - terminal
+  

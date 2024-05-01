@@ -1,0 +1,64 @@
+---
+- name: Enable the expand save panel by default
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSNavPanelExpandedStateForSaveMode
+    type: bool
+    value: true
+    state: present
+
+- name: Enable the expand save panel by default
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSNavPanelExpandedStateForSaveMode2
+    type: bool
+    value: true
+    state: present
+
+- name: Enable the expand save panel by default
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleShowAllExtensions
+    type: bool
+    value: true
+    state: present
+
+- name: Enable the expand save panel by default
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSDocumentSaveNewDocumentsToCloud
+    type: bool
+    value: false
+    state: present
+
+- name: Default textedit to use plain text
+  community.general.osx_defaults:
+    domain: com.apple.TextEdit
+    key: RichText
+    type: int
+    value: 0
+    state: present
+  
+- name: Do not warn on extension change
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: FXEnableExtensionChangeWarning
+    type: bool
+    value: false
+    state: present
+
+- name: Supress the application downloaded from internet warning
+  community.general.osx_defaults:
+    domain: com.apple.LaunchServices
+    key: FXEnableExtensionChangeWarning
+    type: bool
+    value: false
+    state: present
+
+- name: Change scrolling direction 
+  community.general.osx_defaults:
+    domain: com.apple.swipescrolldirection
+    key: 
+    type: bool
+    value: false
+    state: present

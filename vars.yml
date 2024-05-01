@@ -1,0 +1,143 @@
+user: levensailor
+dotfiles_dir: '/Users/{{ user }}/'
+gitconfig_name: Jeff Levensailor
+gitconfig_email: jlevensailor@presidio.com
+
+homebrew_taps:
+  - homebrew/cask
+  - homebrew/core
+
+homebrew_apps:
+    - mas
+    - ansible
+    - leapp
+    - rar
+    - aws-keychain
+    - awscli
+    - azure-cli
+    - terraform
+    - m1-terraform-provider-helper
+    - certifi
+    - coreutils
+    - git
+    - helm
+    - jq
+    - nano
+    - neofetch
+    - mdcat
+    - nmap
+    - node
+    - nvm
+    - packer
+    - protobuf
+    - python@3.12
+    - pyyaml
+    - sshpass
+    - ssh-copy-id
+    - wget
+    - curl
+    - zsh
+    - telnet
+    - terminal-notifier
+    - twine
+    - yarn
+    - go
+    - z
+    - curl
+    - openssl
+    - dfu-util
+    - gh
+    - tmux
+    - vsh
+    - wifi-password
+    - zip
+    - zsh-autocomplete
+    - zsh-completions
+    - zsh-fast-syntax-highlighting
+
+
+cask_apps:
+  - gimp
+  - spotify
+  - iterm2
+  - visual-studio-code
+  - mongodb-compass
+  - vagrant
+  - balenaetcher
+  - virtualbox
+  - postman
+  - google-chrome
+  - transmission
+  - firefox
+  - spotify
+  - audacity
+  - flux
+  - vlc
+  - dropbox-experimental
+  - macdown
+
+mas_apps:
+  - 634148309
+  - 1006087419
+  - 1230249825
+  - 1298486723
+  - 1295203466
+  - 1289197285
+  - 1091189122
+
+code_extensions:
+  - ms-vscode.azure-account
+  - redhat.ansible
+  - NecatiARSLAN.aws-access-vscode-extension
+  - Boto3typed.boto3-ide
+  - ms-azuretools.vscode-docker
+  - gerane.Theme-Dracula
+  - GitHub.copilot-chat
+  - GitHub.copilot
+  - codezombiech.gitignore
+  - jameswain.gitlab-pipelines
+  - mgesbert.indent-nested-dictionary
+  - wholroyd.jinja
+  - Meezilla.json
+  - ms-python.python
+  - ms-vscode-remote.remote-ssh
+  - ms-vscode-remote.remote-ssh-edit
+  - ms-vscode.remote-explorer
+  - redhat.vscode-yaml
+  - mechatroner.rainbow-csv
+  - shd101wyy.markdown-preview-enhanced
+  
+dock_apps:
+  # Finder.app (default)
+  # Mail.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Mail.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Messages.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Messages.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Adium.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Adium.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Calendar.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Calendar.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+   # Reminders.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Reminders.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+   # Slack.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Spacer
+  - '{tile-data={}; tile-type="spacer-tile";}'
+
+  # Safari.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Safari.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Firefox.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Firefox.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # FirefoxDeveloperEdition.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/FirefoxDeveloperEdition.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Terminal.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Utilities/Terminal.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Sublime Text.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Sublime Text.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Spacer
+  - '{tile-data={}; tile-type="spacer-tile";}'
+
+  # Sequel Pro.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Sequel Pro.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Spotify.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Spotify.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
