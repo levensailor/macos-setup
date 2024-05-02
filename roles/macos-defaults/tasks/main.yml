@@ -222,11 +222,3 @@
     line: '%ADMIN ALL=(ALL) NOPASSWD: ALL'
     validate: /usr/sbin/visudo -cf %s
   become: yes
-
-- name: Run command using argv with mixed argument formats
-  ansible.builtin.command:
-    argv:
-      - /usr/libexec/PlistBuddy
-      - -c
-      - /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
-      - Set :LowPriorityBackgroundIO true
