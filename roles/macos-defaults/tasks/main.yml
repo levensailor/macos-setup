@@ -62,3 +62,171 @@
     type: bool
     value: false
     state: present
+
+- name: Remove Quote Substitution
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticQuoteSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
+
+- name: Remove Dash Substitution
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticDashSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
+
+- name: Right Bottom corner is right click
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.trackpad.trackpadCornerClickBehavior
+    type: int
+    value: 1
+    state: present
+
+- name: Enable secondary click
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.trackpad.enableSecondaryClick
+    type: bool
+    value: true
+    state: present
+
+- name: Disable autocorrect
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticSpellingCorrectionEnabled
+    type: bool
+    value: false
+    state: present
+
+- name: Save screenshots to clipboard by default
+  community.general.osx_defaults:
+    domain: com.apple.screencapture
+    key: target
+    type: string
+    value: clipboard
+    state: present
+
+- name: Display full POSIX path as Finder window title
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: _FXShowPosixPathInTitle
+    type: bool
+    value: true
+    state: present
+
+- name: Avoid creating .DS_Store files on network volumes
+  community.general.osx_defaults:
+    domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    type: bool
+    value: true
+    state: present
+
+- name: Disable Creation of Metadata Files on USB Volumes
+  community.general.osx_defaults:
+    domain: com.apple.desktopservices
+    key: DSDontWriteUSBStores
+    type: bool
+    value: true
+    state: present
+
+- name: Disable warning on quitting of iterm2
+  community.general.osx_defaults:
+    domain: com.googlecode.iterm2
+    key: PromptOnQuit
+    type: bool
+    value: false
+    state: present
+
+- name: Enable Dashboard dev mode (allows keeping widgets on the desktop)
+  community.general.osx_defaults:
+    domain: com.apple.dashboard
+    key: devmode
+    type: bool
+    value: true
+    state: present
+
+- name: Disable continuous spellcheck in imessages
+  community.general.osx_defaults:
+    domain: com.apple.messageshelper.MessageController
+    key: SOInputLineSettings -dict-add "continuousSpellCheckingEnabled"
+    type: bool
+    value: false
+    state: present
+
+- name: Disable the all too sensitive backswipe on trackpads
+  community.general.osx_defaults:
+    domain: com.google.Chrome
+    key: AppleEnableSwipeNavigateWithScrolls
+    type: bool
+    value: false
+    state: present
+
+- name: Disable the all too sensitive backswipe on trackpads
+  community.general.osx_defaults:
+    domain: com.google.Chrome.canary
+    key: AppleEnableSwipeNavigateWithScrolls
+    type: bool
+    value: false
+    state: present
+
+- name: Expand the print dialog by default
+  community.general.osx_defaults:
+    domain: com.google.Chrome
+    key: PMPrintingExpandedStateForPrint2
+    type: bool
+    value: true
+    state: present
+
+- name: Expand the print dialog by default
+  community.general.osx_defaults:
+    domain: com.google.Chrome.canary
+    key: PMPrintingExpandedStateForPrint2
+    type: bool
+    value: true
+    state: present
+
+- name: Set the icon size of Dock items to 36 pixels
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: tilesize
+    type: int
+    value: 36
+    state: present
+
+- name: Set the magnification to 70 pixels
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: largesize
+    type: int
+    value: 70
+    state: present
+
+- name: Set the magnification to 70 pixels
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: magnification
+    type: int
+    value: 1
+    state: present
+
+  - name: Add user to sudoer without password
+    ansible.builtin.lineinfile:
+      path: /etc/sudoers
+      regexp: '^%ADMIN ALL='
+      line: '%ADMIN ALL=(ALL) NOPASSWD: ALL'
+      validate: /usr/sbin/visudo -cf %s
+    become: yes
+
+- name: Run command using argv with mixed argument formats
+  ansible.builtin.command:
+    argv:
+      - /usr/libexec/PlistBuddy -c
+      - -c
+      - /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
+      - Set :LowPriorityBackgroundIO true

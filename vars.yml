@@ -61,7 +61,6 @@ cask_apps:
   - mongodb-compass
   - vagrant
   - balenaetcher
-  - virtualbox
   - postman
   - google-chrome
   - transmission
