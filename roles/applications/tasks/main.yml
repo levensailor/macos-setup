@@ -3,12 +3,6 @@
   community.general.homebrew:
     update_homebrew: yes
 
-- name: Homebrew tap
-  community.general.homebrew_tap:
-    name: '{{ item }}'
-    state: present
-  loop: '{{ homebrew_taps }}'
-
 - name: Homebrew packages install
   community.general.homebrew:
     name: '{{ item}}'
