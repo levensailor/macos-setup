@@ -199,20 +199,20 @@
     value: 36
     state: present
 
-- name: Set the magnification to 70 pixels
-  community.general.osx_defaults:
-    domain: com.apple.dock
-    key: largesize
-    type: int
-    value: 70
-    state: present
-
-- name: Set the magnification to 70 pixels
+- name: Set the magnification to on
   community.general.osx_defaults:
     domain: com.apple.dock
     key: magnification
     type: bool
     value: true
+    state: present
+
+- name: Set the magnification to 70 pixels
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: largesize
+    type: float
+    value: 70
     state: present
 
 - name: Add user to sudoer without password
