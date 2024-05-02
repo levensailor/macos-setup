@@ -212,7 +212,7 @@
     domain: com.apple.dock
     key: magnification
     type: int
-    value: 1
+    value: 70
     state: present
 
 - name: Add user to sudoer without password
