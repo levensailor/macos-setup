@@ -70,7 +70,6 @@ cask_apps:
   - audacity
   - flux
   - vlc
-  - dropbox-experimental
   - macdown
 
 mas_apps:
