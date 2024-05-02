@@ -211,8 +211,8 @@
   community.general.osx_defaults:
     domain: com.apple.dock
     key: magnification
-    type: int
-    value: 70
+    type: bool
+    value: true
     state: present
 
 - name: Add user to sudoer without password
