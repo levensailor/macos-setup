@@ -80,6 +80,7 @@ mas_apps:
   - 1295203466
   - 1289197285
   - 1091189122
+  - 441258766
 
 code_extensions:
   - ms-vscode.azure-account
@@ -102,7 +103,7 @@ code_extensions:
   - redhat.vscode-yaml
   - mechatroner.rainbow-csv
   - shd101wyy.markdown-preview-enhanced
-  
+
 dock_apps:
   # Finder.app (default)
   # Mail.app

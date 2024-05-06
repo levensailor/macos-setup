@@ -1,0 +1,34 @@
+{
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "isGitignoreExtActive": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.persistentSessionScrollback": 10000,
+    "terminal.integrated.scrollback": 10000,
+    "git.ignoreLegacyWarning": true,
+    "workbench.colorTheme": "Dracula Soft",
+    "remote.SSH.remotePlatform": {
+        "coder-vscode--levensailor--test01": "linux"
+    },
+    "azure.tenant": "70b5e5ff-166d-4464-b592-7da7a6ed264f",
+    "ansible.lightspeed.enabled": true,
+    "ansible.lightspeed.suggestions.enabled": true,
+    "idf.espIdfPath": "/Users/jlevensailor/esp-idf-v5.1.2/esp-idf",
+    "idf.pythonBinPath": "/Users/jlevensailor/.espressif/python_env/idf5.1_py3.11_env/bin/python",
+    "idf.toolsPath": "/Users/jlevensailor/.espressif",
+    "idf.customExtraPaths": "/Users/jlevensailor/.espressif/tools/xtensa-esp-elf-gdb/12.1_20221002/xtensa-esp-elf-gdb/bin:/Users/jlevensailor/.espressif/tools/riscv32-esp-elf-gdb/12.1_20221002/riscv32-esp-elf-gdb/bin:/Users/jlevensailor/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin:/Users/jlevensailor/.espressif/tools/xtensa-esp32s2-elf/esp-12.2.0_20230208/xtensa-esp32s2-elf/bin:/Users/jlevensailor/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin:/Users/jlevensailor/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin:/Users/jlevensailor/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/Users/jlevensailor/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230921/openocd-esp32/bin:/Users/jlevensailor/.espressif/tools/esp-rom-elfs/20230320",
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "/Users/jlevensailor/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230921/openocd-esp32/share/openocd/scripts",
+        "ESP_ROM_ELF_DIR": "/Users/jlevensailor/.espressif/tools/esp-rom-elfs/20230320/"
+    },
+    "idf.gitPath": "git",
+    "editor.fontSize": 10,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.acceptSuggestionOnEnter": "off"
+}

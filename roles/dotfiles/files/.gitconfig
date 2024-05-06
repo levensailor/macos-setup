@@ -1,0 +1,6 @@
+[user]
+	email = jlevensailor@presidio.com
+	name = Jeff Levensailor
+[credential]
+	helper = osxkeychain
+	UseHttpPath = true

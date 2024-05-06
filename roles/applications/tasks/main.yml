@@ -1,11 +1,11 @@
 ---
 - name: Homebrew update
   community.general.homebrew:
-    update_homebrew: yes
+    update_homebrew: true
 
 - name: Homebrew packages install
   community.general.homebrew:
-    name: '{{ item}}'
+    name: '{{ item }}'
     state: '{{ item.state | default("present") }}'
   loop: '{{ homebrew_apps }}'
 
@@ -20,4 +20,10 @@
     id: "{{ item }}"
     state: present
   loop: '{{ mas_apps }}'
+
+- name: Install oh-my-zsh
+  ansible.builtin.shell:
+    cmd: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
 
