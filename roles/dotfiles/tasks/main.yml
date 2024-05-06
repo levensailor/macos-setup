@@ -71,5 +71,5 @@
 - name: Copy vscode settings
   ansible.builtin.copy:
     src: code/settings.json
-    dest: ~/Library/Application\ Support/Code/User/settings.json
+    dest: ~/Library/Application Support/Code/User/settings.json
 
