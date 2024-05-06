@@ -1,5 +1,11 @@
 ---
 
+- name: Create aws dotfiles directory
+  ansible.builtin.file:
+    path: ~/.aws
+    state: directory
+    mode: '0744'
+
 - name: Copy aws config
   ansible.builtin.copy:
     src: files/.aws/config
@@ -10,6 +16,12 @@
     src: files/.aws/credentials
     dest: ~/.aws/credentials
 
+- name: Create terraform dotfiles directory
+  ansible.builtin.file:
+    path: ~/.terraformrc
+    state: directory
+    mode: '0744'
+
 - name: Copy terraform cloud credentials
   ansible.builtin.copy:
     src: files/.terraformrc
@@ -19,6 +31,12 @@
   ansible.builtin.copy:
     src: files/certs
     dest: ~/certs
+
+- name: Create pypirc dotfiles directory
+  ansible.builtin.file:
+    path: ~/.pypirc
+    state: directory
+    mode: '0744'
 
 - name: Copy .pypirc
   ansible.builtin.copy:
