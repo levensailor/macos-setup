@@ -8,13 +8,13 @@
 
 - name: Copy aws config
   ansible.builtin.copy:
-    src: files/.aws/config
+    src: .aws/config
     dest: ~/.aws/config
 
-- name: Copy aws credentials
-  ansible.builtin.copy:
-    src: files/.aws/credentials
-    dest: ~/.aws/credentials
+# - name: Copy aws credentials
+#   ansible.builtin.copy:
+#     src: .aws/credentials
+#     dest: ~/.aws/credentials
 
 - name: Create terraform dotfiles directory
   ansible.builtin.file:
@@ -22,14 +22,14 @@
     state: directory
     mode: '0744'
 
-- name: Copy terraform cloud credentials
-  ansible.builtin.copy:
-    src: files/.terraformrc
-    dest: ~/.terraformrc
+# - name: Copy terraform cloud credentials
+#   ansible.builtin.copy:
+#     src: .terraformrc
+#     dest: ~/.terraformrc
 
 - name: Copy certs
   ansible.builtin.copy:
-    src: files/certs
+    src: certs
     dest: ~/certs
 
 - name: Create pypirc dotfiles directory
@@ -40,36 +40,36 @@
 
 - name: Copy .pypirc
   ansible.builtin.copy:
-    src: files/.pypirc
+    src: .pypirc
     dest: ~/.pypirc
 
 - name: Copy .zshrc
   ansible.builtin.copy:
-    src: files/.zshrc
+    src: .zshrc
     dest: ~/.zshrc
 
 - name: Copy .zprofile
   ansible.builtin.copy:
-    src: files/.zprofile
+    src: .zprofile
     dest: ~/.zprofile
 
 - name: Copy .zsh_history
   ansible.builtin.copy:
-    src: files/.zsh_history
+    src: .zsh_history
     dest: ~/.zsh_history
 
 - name: Copy jl.zsh-theme
   ansible.builtin.copy:
-    src: files/jl.zsh-theme
+    src: jl.zsh-theme
     dest: ~/.oh-my-zsh/themes/jl.zsh-theme
 
 - name: Copy .gitconfig
   ansible.builtin.copy:
-    src: files/.gitconfig
+    src: .gitconfig
     dest: ~/.gitconfig
 
 - name: Copy vscode settings
   ansible.builtin.copy:
-    src: files/vscode/settings.json
+    src: vscode/settings.json
     dest: ~/Library/Application\ Support/Code/User/settings.json
 
